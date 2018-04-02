@@ -9,7 +9,7 @@ class MemoEditScreen extends React.Component{
 		return(
 			<View style={styles.container}>
 				<TextInput style={styles.memoEditInput} multiline value="Hi"/>
-				<CircleButton>
+				<CircleButton onPress={ () => {this.props.navigation.goBack(); }}>
 					{ '\uf00C' }
 				</CircleButton>
 			</View>
