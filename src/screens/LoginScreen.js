@@ -39,6 +39,7 @@ class LoginScreen extends React.Component{
 					onChangeText={(text) => {this.setState({ email:text}); }} 
 					autoCapitalize="none"
 					placeholder="Email Address"
+					underlineColorAndroid="transparent"
 				/>
 				<TextInput 
 					style={styles.input}
@@ -47,8 +48,9 @@ class LoginScreen extends React.Component{
 					autoCapitalize="none"
 					placeholder="Password"
 					secureTextEntry={true}
+					underlineColorAndroid="transparent"
 				/>
-				<TouchableHighlight style={styles.button} onPress={this.handleSubmit.bind(this)} >
+				<TouchableHighlight style={styles.button} onPress={this.handleSubmit.bind(this)} underlayColor='#C70F56' >
 					<Text style={styles.buttonTitle}>ログインする</Text>
 				</TouchableHighlight>
 
